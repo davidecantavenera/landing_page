@@ -660,11 +660,11 @@ a:hover {
     .hero-top-row {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 20px;
     }
 
     .mini-avatar {
-        margin: 0 auto 10px auto;
+        margin: 0 auto 15px auto;
         width: 120px;
         height: 120px;
     }
@@ -676,44 +676,38 @@ a:hover {
     .location-info {
         justify-content: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .hero-avatar {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
     }
 
     .nav-social-links {
         display: none;
+        /* Hide socials in nav on mobile, maybe add to burger later */
     }
 
     .home .profile-bio {
         transform: scale(1);
-        padding: 2rem 1rem;
-        width: 100%;
+        padding: 2rem 1.5rem;
         max-width: 100%;
-        margin: 0;
+    }
+
+    .mini-avatar {
+        width: 100px;
+        height: 100px;
+        margin-right: 12px;
+        margin-left: 8px;
     }
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     h2 {
-        font-size: 1.6rem;
-    }
-
-    /* Fix Date Alignment in Publications */
-    .pub-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-
-    .pub-year {
-        align-self: flex-start;
-        font-size: 0.9rem;
+        font-size: 1.8rem;
     }
 
     .scroll-indicator {
@@ -1881,5 +1875,44 @@ a:hover {
 }
 
 .status-info span {
+
     line-height: 1.4;
+}
+
+/* Nothing Here Placeholder */
+.nothing-here {
+    text-align: center;
+    padding: 3rem;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    /* Match publication-item styles */
+    background: rgba(17, 34, 64, 0.95);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    margin-top: 40px;
+    width: 100%;
+
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nothing-here:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 40px -10px rgba(100, 255, 218, 0.15);
+}
+
+.nothing-here .emoticon {
+    font-size: 3rem;
+    color: var(--color-text-secondary);
+    /* Same as text, not accent/green */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* No animation, no green color */
 }
