@@ -657,10 +657,26 @@ a:hover {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .profile-content-wrapper {
+    .hero-top-row {
         flex-direction: column;
         text-align: center;
         gap: 20px;
+    }
+
+    .mini-avatar {
+        margin: 0 auto 15px auto;
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-bio {
+        text-align: center;
+    }
+
+    .location-info {
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .hero-avatar {
