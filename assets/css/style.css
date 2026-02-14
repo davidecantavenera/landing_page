@@ -98,7 +98,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.53rem;
+    font-size: 2rem;
     border-left: 4px solid var(--color-accent);
     padding-left: 20px;
     margin-bottom: 1.5rem;
@@ -203,12 +203,19 @@ a:hover {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     40% {
         transform: translateX(-50%) translateY(-10px);
     }
+
     60% {
         transform: translateX(-50%) translateY(-5px);
     }
@@ -952,13 +959,13 @@ a:hover {
     .projects-slider-container {
         gap: 10px;
     }
-    
+
     .slider-arrow {
         width: 40px;
         height: 40px;
         font-size: 1rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(3, 100%);
     }
@@ -979,7 +986,7 @@ a:hover {
     flex-grow: 1;
 }
 
-.project-card .project-content > p {
+.project-card .project-content>p {
     margin-top: 0;
     margin-bottom: auto;
     min-height: 60px;
@@ -1571,8 +1578,13 @@ a:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .blog-post-container {
@@ -1590,6 +1602,7 @@ a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1718,11 +1731,11 @@ a:hover {
         max-height: 95vh;
         padding: 1.5rem;
     }
-    
+
     .blog-post-header h1 {
         font-size: 1.8rem;
     }
-    
+
     .close-post-btn {
         top: 10px;
         right: 10px;
